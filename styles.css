@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* --- */
+/* DRY */
+/* --- */
+
+/* Flexbox */
+body,
+#header, 
+#initial-state {
+    display: flex;
+}
+body,
+#initial-state {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Font color white */
+h1,
+#header p {
+    color: white;
+}
+
+/* page elements alpha */
+
+h1 {
+    font-size: 3rem;
+}
+
+#header {
+    background-image: url("./images/backsplash.jpg");
+    background-size: cover;
+    width: 550px;
+    height: 210px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#initial-state {
+    height: calc(100vh - 230px);
+    width: 100%;
+    & img {
+        height: 70px;
+    }
+    & p {
+        color: rgb(223,224,226);
+        font-weight: bold;
+    }
+}
